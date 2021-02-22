@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-style: normal;
+}
+
+.list {
+    width: 1160px;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+.list li {
+    width: 200px;
+    padding: 6px;
+    float: left;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    height: 310px;
+    position: relative;
+}
+
+.list li p {
+    width: 200px;
+    height: 48px;
+    line-height: 24px;
+    margin: 10px 0 10px 0;
+    overflow: hidden;
+}
+
+.list li img {
+    width: 200px;
+    height: 200px;
+    display: block;
+}
+
+.list li span {
+    display: inline-block;
+    color: #d00100;
+}
+
+.list li em {
+    display: inline-block;
+    font-size: 12px;
+    margin-left: 60px;
+}
+
+.list li a {
+    font-size: 12px;
+    color: #333;
+}
+
+.list li p:hover {
+    text-decoration: underline;
+    color: #d00100;
+}
+
+.order {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    position: relative;
+    top: 0px !important;
+    z-index: 58;
+}
+
+.order li {
+    float: left;
+    display: inline-block;
+}
+
+.order li a {
+    display: block;
+    width: 70px;
+    height: 36px;
+    border-right: 1px solid #ddd;
+    text-align: center;
+    line-height: 36px;
+    font-size: 12px;
+    color: #666;
+}
+
+.order li a i {
+    width: 9px;
+    height: 10px;
+    background: url(http://misc.jiuxian.com/img/search/srpIcons.png) no-repeat -65px -108px;
+    margin-top: 13px;
+    margin-left: 3px;
+    display: inline-block;
+}
+
+.order li a:hover {
+    background: #c41921;
+    color: #fff;
+}

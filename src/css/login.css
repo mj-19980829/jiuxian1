@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+}
+
+.bg {
+    width: 100%;
+    height: 600px;
+    padding: 0 0 50px;
+    background: url(https://img10.jiuxian.com/bill/2021/0201/bbe0ef63ee324713bf38023e4395db12.jpg)no-repeat center top;
+    position: relative;
+}
+
+.bg .box-top {
+    width: 350px;
+    height: 405px;
+    background: #fff;
+    position: absolute;
+    right: 130px;
+    top: 130px;
+}
+
+.box-top .bg-top p {
+    width: 350px;
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+}
+
+.bg-top p em {
+    color: #e10303;
+    margin: 0 20px 0 20px;
+}
+
+.bg-top p span {
+    margin-left: 20px;
+    color: #ccc;
+}
+
+.bg-top p i {
+    float: right;
+    display: inline-block;
+    width: 65px;
+    height: 65px;
+    background-color: pink;
+    background: url(https://login.jiuxian.com/img/reg/regLogin-8.png) no-repeat 0 -230px;
+}
+
+input {
+    width: 270px;
+    height: 30px;
+    text-indent: 3em;
+    margin: 10px 0 10px 20px;
+}
+
+form p {
+    position: relative;
+}
+
+form i {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    /* background: #f3f3f3; */
+    position: absolute;
+    font-size: 20px !important;
+    left: 22px;
+    text-align: center;
+    top: 9px;
+}
+
+.bot {
+    padding-left: 2px;
+}
+
+.bot p {
+    font-size: 12px;
+}
+
+.bot p a {
+    margin: 0 5px;
+}
+
+.bot p a:nth-of-type(1) {
+    margin-left: 100px;
+    color: #666;
+}
+
+.bot p a:nth-of-type(2) {
+    color: #2774d0;
+}

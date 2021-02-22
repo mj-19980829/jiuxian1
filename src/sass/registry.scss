@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+input {
+    vertical-align: middle;
+    outline: none;
+}
+
+.jx-wrap {
+    width: 100%;
+    background: #fafafa;
+    // 头部
+    .jx-top-header {
+        width: 100%;
+        background: #fff;
+        height: 88px;
+        box-shadow: 1px 2px 6px #e1e1e1;
+        z-index: 1;
+        position: relative;
+        .jx-top-head {
+            width: 1000px;
+            height: 88px;
+            margin: 0 auto;
+            .jx-logo {
+                float: left;
+                height: 63px;
+                margin-top: 15px;
+                width: 257px;
+                p {
+                    float: left;
+                }
+                .jx-index {
+                    width: 140px;
+                    display: block;
+                    height: 63px;
+                }
+                .jx-topic {
+                    width: 117px;
+                    float: right;
+                }
+            }
+            .jx-head-nav {
+                width: 77px;
+                height: 14px;
+                line-height: 14px;
+                float: right;
+                display: inline;
+                margin: 48px 0 0 20px;
+                position: relative;
+                cursor: pointer;
+                z-index: 10;
+                .jx-head-icon {
+                    height: 14px;
+                    position: relative;
+                    z-index: 2;
+                    font-size: 12px;
+                    span {
+                        float: left;
+                        display: inline-block;
+                        color: #666;
+                        margin-right: 6px;
+                    }
+                    .jx-jt {
+                        float: left;
+                        display: inline-block;
+                        background-position: -23px 0;
+                        width: 15px;
+                        height: 14px;
+                    }
+                    i {
+                        background: url(https://login.jiuxian.com/img/reg/regLogin-8.png) no-repeat 0 0;
+                    }
+                }
+            }
+            .jx-head-pop {
+                display: none;
+                position: absolute;
+                border: 1px solid #ccc;
+                top: -6px;
+                left: -10px;
+                width: 85px;
+                z-index: 1;
+                padding-top: 26px;
+                li {
+                    border-top: 1px dotted #ccc;
+                    padding-left: 10px;
+                    height: 24px;
+                    line-height: 24px;
+                    background: #fff;
+                    a {
+                        color: #999;
+                        font-size: 12px;
+                    }
+                    a:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        .jx-head-nav:hover .jx-head-pop {
+            display: block;
+        }
+        .jx-reg {
+            float: right;
+            color: #999;
+            margin-top: 48px;
+            height: 14px;
+            line-height: 14px;
+            font-size: 12px;
+            a {
+                color: #0066cc;
+                margin-left: 20px;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    // 头部结束
+    // 内容开始
+    .jx-main-bg {
+        width: 100%;
+        height: 600px;
+        background: url(../img/bg.jpg)repeat-x scroll left top;
+        padding: 70px 0 50px 0;
+        .jx-main {
+            width: 1000px;
+            margin: 0 auto;
+            .jx-content {
+                background: #fff;
+                border: 3px solid #eaeaea;
+                border-radius: 5px;
+                box-shadow: 1px 6px 11px #e4e4e4;
+                height: 500px;
+                position: relative;
+                .jx-regbox {
+                    height: 450px;
+                    width: 994px;
+                    position: relative;
+                    .jx-regTitBox {
+                        width: 280px;
+                        height: 34px;
+                        position: absolute;
+                        right: 15px;
+                        top: -37px;
+                        .jx-regTit {
+                            float: right;
+                            cursor: pointer;
+                            display: inline-block;
+                            padding: 0 15px;
+                            height: 34px;
+                            line-height: 34px;
+                            color: #fff;
+                            font-family: "微软雅黑";
+                            font-size: 14px;
+                            border-bottom: 0px;
+                            border-top-left-radius: 5px;
+                            border-top-right-radius: 5px;
+                            background: #ff9900;
+                            margin-left: 6px;
+                            vertical-align: top;
+                            border-bottom: none;
+                        }
+                    }
+                    // 表单
+                    .regConWrap {
+                        width: 994px;
+                        height: 500px;
+                        // background: pink;
+                        color: #666;
+                        .auto {
+                            width: 400px;
+                            height: 470px;
+                            margin: 0 auto;
+                            padding-top: 80px;
+                            p {
+                                position: relative;
+                                input {
+                                    width: 300px;
+                                    height: 35px;
+                                    margin: 10px 0;
+                                    text-indent: 2em;
+                                }
+                                .ipt6 {
+                                    background: #e10303;
+                                    border: 0;
+                                    color: #fff;
+                                    margin-top: 20px;
+                                    padding-right: 15px;
+                                }
+                                a {
+                                    color: #0099e3;
+                                }
+                                a:hover {
+                                    text-decoration: underline;
+                                }
+                                i {
+                                    position: absolute;
+                                    left: 98px;
+                                    top: 20px;
+                                }
+                                span {
+                                    display: block;
+                                    height: 20px;
+                                    line-height: 20px;
+                                    background: #ed787f;
+                                    position: absolute;
+                                    z-index: 6;
+                                    font-size: 12px;
+                                    right: 8px;
+                                    top: 49px;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
