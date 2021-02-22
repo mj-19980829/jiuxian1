@@ -32,7 +32,6 @@ $.ajax({
     },
     dataType: 'json'
 }).done(function(data) {
-    console.log(data); //获取sid对应的数据,找到对应的元素，将值赋给元素。
     $smallpic.attr('src', data.picurl);
     $bpic.attr('src', data.picurl)
     $loadtitle.html(data.title);
@@ -103,16 +102,8 @@ $listul.on('mouseover', 'li', function() {
 
     $smallpic.attr('src', $url);
     $bpic.attr('src', $url);
-    // $(this).find('img').css({
-    //     border: '2px solid red'
-    // })
 });
 
-// $listul.on('mouseout', 'li', function() {
-//     $(this).find('img').css({
-//         border: 'none'
-//     })
-// })
 
 
 let $num = 6;
@@ -160,9 +151,12 @@ const $btn = $('.bt button');
 const $count = $('.bx-end input');
 const $icoup = $('.num .ico1');
 const $icodown = $('.num .ico2');
+const $bt2 = $('.bx-bot .bt2');
+const $zzc = $('.zzc');
 $btn.on('click', function() {
-
     getLocalStorage()
+    $bt2.css('display', 'block');
+    $zzc.css('display', 'block');
     if ($arrsid.includes($sid)) {
         let $index = $arrsid.indexOf($sid);
         $arrnum[$index] = parseInt($arrnum[$index]) + parseInt($count.val());
@@ -194,4 +188,4 @@ const $input = $('.ftRight-form input');
 $form.on('click', function() {
     $span.css('display', 'none');
     $input.focus();
-})
+});

@@ -397,6 +397,7 @@ input {
     border-top: 1px solid #f2f2f2;
     /* background: pink; */
     margin-left: 6px;
+    position: relative;
 }
 
 .bx-bot p {
@@ -443,7 +444,6 @@ input {
 .lis div {
     float: left;
     margin-top: 10px;
-    position: relative;
     height: 35px;
     line-height: 32px;
     padding: 2px;
@@ -504,6 +504,11 @@ input {
     position: absolute !important;
     left: -2px;
     top: 139px;
+    z-index: 199;
+}
+
+.lis .num {
+    position: relative;
 }
 
 .bx-end .num p {
@@ -556,4 +561,63 @@ input {
     border: 0;
     color: #fff;
     font-size: 16px;
+}
+
+.bx-bot .bt2 {
+    position: absolute !important;
+    top: 20px;
+    z-index: 10000;
+    width: 350px;
+    height: 130px !important;
+    padding: 30px;
+    background: #fff;
+    text-align: center;
+    display: none;
+}
+
+.bt2 i {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    vertical-align: middle;
+    background: url(http://misc.jiuxian.com/images/detail_v2.0/d-icon.png) no-repeat -201px -55px;
+}
+
+.bt2_top span {
+    font-size: 18px;
+}
+
+.bt2_bot {
+    margin-top: 15px;
+}
+
+.bt2_bot a {
+    display: inline-block;
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.bt2_bot .ia1 {
+    border: 1px solid #ccc;
+    color: #666;
+    margin-right: 6px;
+}
+
+.bt2_bot .ia2 {
+    background: #cc3333;
+    color: #fff;
+}
+
+.zzc {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    display: none;
 }
