@@ -654,6 +654,19 @@ i {
     float: right;
 }
 
+.toolbar-right .btn-area a {
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #e43a3d;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+}
+
 .btn-area a {
     display: block;
     width: 96px;
