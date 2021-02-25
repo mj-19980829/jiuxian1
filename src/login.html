@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="./css/registry.css">
 <link rel="stylesheet" href="./css/login.css">
 <link rel="stylesheet" href="./iconfont/iconfont.css">
+<link rel="stylesheet" href="./css/footer.css">
 <script src="script/login_module.js" type="module"></script>
 
 <body>
@@ -62,16 +63,166 @@
             </div>
             <fieldset>
                 <form action="" method="">
-                    <p><i class="iconfont">&#xe72f;</i><input type="text" placeholder="用户名/邮箱/手机号" class="telnum"><span></span></p>
-                    <p><i class="iconfont">&#xe6d5;</i><input type="password" placeholder="密码" class="password"><span></span></p>
+                    <p class="p1"><i class="iconfont">&#xe72f;</i><input type="text" placeholder="用户名/邮箱/手机号" class="telnum"><span></span></p>
+                    <p class="p2"><i class="iconfont">&#xe6d5;</i><input type="password" placeholder="密码" class="password"><span></span></p>
                     <p><i class="iconfont">&#xe6a0;</i><input type="text" placeholder="验证码"><span></span></p>
-                    <p><input type="button" value="登&nbsp;&nbsp;录" style="width: 274px;padding-right: 45px;background: #e10303;border: 0;color: #fff;font-size: 14px;">
+                    <p><input type="button" value="登&nbsp;&nbsp;录" class="btn" style="width: 274px;padding-right: 45px;background: #e10303;border: 0;color: #fff;font-size: 14px;">
                         <a href="./registry.html"></a>
                     </p>
                 </form>
             </fieldset>
             <div class="bot">
                 <p><input type="checkbox" style="width: 20px;height: 20px;">&nbsp;自动登录<a href="#">忘记密码</a><a href="#">免费注册</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <div class="footer">
+        <div class="footerTopBox">
+            <div class="footerTop">
+                <div class="footerContact">
+                    <i></i>
+                    <b>400-617-9999</b>
+                    <span>客服热线</span>
+                    <span>9:00-23:00</span>
+                    <span>贴心服务</span>
+                </div>
+                <div class="footerTopRight">
+                    <div class="ftRight-tit">优惠促销早知道</div>
+                    <div class="ftRight-form">
+                        <input type="text" id="subsrcribe_email">
+                        <span style="display: block;">请输入您的邮箱地址</span>
+                        <i class="publicIcon" id="subscribe_but"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="footerServices">
+                <ul class="clearfix">
+                    <li>
+                        <h3>
+                            <i></i>
+                            <span>新手入门</span>
+                        </h3>
+                        <p><a href="#">购物保障</a></p>
+                        <p><a href="#">服务协议</a></p>
+                        <p><a href="#">发票说明</a></p>
+                    </li>
+                    <li>
+                        <h3>
+                            <i></i>
+                            <span>常见问题</span>
+                        </h3>
+                        <p><a href="#">红包使用</a></p>
+                        <p><a href="#">返现使用</a></p>
+                        <p><a href="#">兑换码</a></p>
+                    </li>
+                    <li>
+                        <h3>
+                            <i></i>
+                            <span>配送说明</span>
+                        </h3>
+                        <p><a href="#">配送时间</a></p>
+                        <p><a href="#">配送费用</a></p>
+                        <p><a href="#">配送范围</a></p>
+                    </li>
+                    <li>
+                        <h3>
+                            <i></i>
+                            <span>支付方式</span>
+                        </h3>
+                        <p><a href="#">货到付款</a></p>
+                        <p><a href="#">在线支付</a></p>
+                        <p><a href="#">线下支付</a></p>
+                    </li>
+                    <li>
+                        <h3>
+                            <i></i>
+                            <span>售后服务</span>
+                        </h3>
+                        <p><a href="#">品质保证</a></p>
+                        <p><a href="#">退换货政策</a></p>
+                        <p><a href="#">退换货流程</a></p>
+                    </li>
+                    <li>
+                        <h3>
+                            <i></i>
+                            <span>特色服务</span>
+                        </h3>
+                        <p><a href="#">会员俱乐部</a></p>
+                        <p><a href="#">企业客户</a></p>
+                    </li>
+                    <li class="jxMicroblogging">
+                        <div class="item sinaMb">
+                            <div class="sinaMbCom clearfix">
+                                <a href="#"><i></i></a>
+                                <a href="#">酒仙新浪微博</a>
+                            </div>
+                        </div>
+                        <div class="item weixin">
+                            <div class="weixinCon">
+                                <i></i>
+                                <a href="#">酒仙微信</a>
+                                <div class="weixinCode">
+                                    <img src="http://misc.jiuxian.com/img/newIndexImg/weixin-code.jpg?version=20160405" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerBotBox">
+            <div class="footerBot clearfix">
+                <div class="footerBotLeft">
+                    <p class="footerInfo">
+                        <a href="#">公司简介<i></i></a>
+                        <a href="#">管理团队<i></i></a>
+                        <a href="#">媒体报道<i></i></a>
+                        <a href="#">联系我们<i></i></a>
+                        <a href="#">网站地图<i></i></a>
+                        <a href="#">品牌大全<i></i></a>
+                        <a href="#">中酿国际<i></i></a>
+                    </p>
+                    <p class="copyright">
+                        酒仙网络科技股份有限公司 &nbsp;©&nbsp; 酒仙网&nbsp; 2011&nbsp; jiuxian.com&nbsp; All Rights Reserved&nbsp;&nbsp;<a href="#">京ICP备17043395号&nbsp;&nbsp;</a>京公网安备11030102000060
+                    </p>
+                    <p class="footerAddr" style="color: #999;line-height: 22px;padding-top: 5px;">
+                        <span>统一社会信用代码&nbsp;&nbsp;91110302306646672B&nbsp;&nbsp;食品流通许可证编号&nbsp;&nbsp;JY11131010328793&nbsp;&nbsp;京食药网食备201910019</span>
+                    </p>
+                    <p class="footerAddr" style="color: #999;line-height: 22px; padding-bottom: 7px;">
+                        <span>地址：北京市北京经济技术开发区经海五路58号院8幢4层</span>
+                    </p>
+                    <p class="copybot">
+                        <span>
+                            <a href="#">
+                                <img src="https://rr.knet.cn/static/images/logo/cnnic.png" alt="">
+                            </a>
+                        </span>
+                        <a href="#">
+                            <img src="http://misc.jiuxian.com/img/newIndexImg/copyBot03.jpg" alt="">
+                        </a>
+                        <p class="footerpro">
+                            购买前请确认达到法定饮酒年龄！酒仙网不销售任何含酒精产品给18岁以下人士！
+                        </p>
+                    </p>
+                </div>
+                <div class="footerBotCode">
+                    <div class="jxpho-code">
+                        <p class="codePic">
+                            <img src="http://misc.jiuxian.com/img/newIndexImg/jxPho-code.jpg?version=20160405" alt="">
+                        </p>
+                        <p class="codeText">
+                            手机酒仙网
+                        </p>
+                        <p></p>
+                    </div>
+                    <div class="jkd-code">
+                        <p class="codepic">
+                            <img src="http://misc.jiuxian.com/img/newIndexImg/jx-wxgzh.png" alt="">
+                        </p>
+                        <p class="codeText">微信公众号</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

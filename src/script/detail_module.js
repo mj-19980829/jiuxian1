@@ -189,3 +189,31 @@ $form.on('click', function() {
     $span.css('display', 'none');
     $input.focus();
 });
+
+
+
+const $numinput = $('.num input');
+const $ico1 = $('.num .ico1');
+const $ico2 = $('.num .ico2');
+let $innum = Number($numinput.val());
+
+$ico1.on('click', function() {
+    $numinput.val(++$innum);
+});
+
+
+$ico2.on('click', function() {
+    $numinput.val(--$innum);
+    if ($innum <= 1) {
+        $innum = 1;
+        $numinput.val($innum);
+    }
+});
+
+
+$numinput.on('input', function() {
+    let $reg = /^\d+$/; //行首行尾匹配一个或者多个数字
+    if (!$reg.test($(this).val())) {
+        $(this).val(1); //如果不满足条件，值为1
+    }
+});

@@ -8,7 +8,10 @@ import {} from "https://cdn.bootcdn.net/ajax/libs/jquery/1.12.4/jquery.js";
 const $btn = $('.btn');
 const $telnum = $('.telnum');
 const $password = $('.password');
+const $spana = $('.p1 span');
+const $spanb = $('.p2 span');
 $btn.on('click', function() {
+    // alert(1)
     $.ajax({
         type: 'post',
         url: 'http://10.31.165.15/jiuxian/php/login.php',
@@ -26,3 +29,14 @@ $btn.on('click', function() {
         }
     })
 });
+
+
+$telnum.on('blur', function() {
+    $spana.html('√');
+    $spana.css('color', 'green');
+})
+
+$password.on('blur', function() {
+    $spanb.html('√');
+    $spanb.css('color', 'green');
+})

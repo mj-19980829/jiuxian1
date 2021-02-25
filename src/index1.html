@@ -10,18 +10,20 @@
 </head>
 <link rel="stylesheet" href="./css/header.css">
 <link rel="stylesheet" href="./css/footer.css">
+<link rel="stylesheet" href="./css/index1.css">
 <link rel="stylesheet" href="./iconfont/iconfont.css">
+<script src="script/index_module.js" type="module"></script>
 
 <body>
     <!-- 头部上 -->
     <div class="Topheader">
         <div class="wrapper">
             <div class="login">
-                <a href="registry.html">请登录</a>
-                <a href="login.html">免费注册</a>
+                <a href="login.html">请登录</a>
+                <a href="registry.html">免费注册</a>
             </div>
             <div class="admin" style="display: none;">
-                <span></span>：欢迎光临
+                <span></span>：欢迎来到酒仙网
                 <a href="javascript:;">退出</a>
             </div>
             <div class="box-rt">
@@ -176,7 +178,9 @@
     <div class="navWrap">
         <div class="wrapper">
             <ul style="overflow: hidden;">
-                <li><a href="#">全部商品分类</a></li>
+                <li>
+                    <a href="#" style="font-size: 18px;">全部商品分类</a>
+                </li>
                 <li><a href="#">首页</a></li>
                 <li class="hover" style="margin-left: 10px;"><a href="#">CLUB</a></li>
                 <li class="hover"><a href="#">自营甄选</a></li>
@@ -188,10 +192,50 @@
                 <li class="hover"><a href="#">门店加盟</a></li>
                 <li style="float: right;"><a href="#">牛年开局</a></li>
             </ul>
+            <div class="navlist">
+                <h3>一键选酒</h3>
+                <dl>
+                    <dd>
+                        <dt>整箱购</dt>
+                        <dt>家乡名酒</dt>
+                        <dt>老酒特卖</dt>
+                        <dt>地域名酒</dt>
+                        <dt>值得买</dt>
+                        <dt>实惠大坛</dt>
+                    </dd>
+                    <div class="leftnav">
+
+                    </div>
+                </dl>
+            </div>
         </div>
     </div>
     <!-- 轮播图 -->
-    <div class="lunbo"></div>
+    <div class="lunbo">
+        <ul class="lun_ul">
+            <li class="li1" style="background: url(http://img07.jiuxian.com/bill/2021/0223/897ad355d47043b3b8b0206fe2adb62d.jpg) no-repeat center 0; z-index: 1;"></li>
+            <li style="background: url(http://img07.jiuxian.com/bill/2021/0221/acc02a4e5c91442c866200c17723c046.jpg) no-repeat center 0;"></li>
+            <li style="background: url(http://img10.jiuxian.com/bill/2021/0223/2b9ff1a8e0c249f2824cd0c9fa3fe46c.jpg) no-repeat center 0;"></li>
+            <li style="background: url(http://img08.jiuxian.com/bill/2021/0219/ba53b2ea42724bbdb577c1262fc967e8.jpg) no-repeat center 0;"></li>
+            <li style="background: url(http://img08.jiuxian.com/bill/2021/0219/c506557ca8e648d293fffebadfae5d9e.jpg) no-repeat center 0;"></li>
+            <li style="background: url(http://img09.jiuxian.com/bill/2021/0219/f0857589ec2a469fa5f32356beb1e300.jpg) no-repeat center 0;"></li>
+            <li style="background: url(http://img10.jiuxian.com/bill/2021/0219/3eda455dca964b4aa76972eeff6afb1a.jpg) no-repeat center 0;"></li>
+            <li style="background: url(http://img10.jiuxian.com/bill/2021/0223/ddafd38878bc49a0a12c008c8d342f1f.jpg) no-repeat center 0;"></li>
+        </ul>
+        <ol class="yuanquan">
+            <li class="active">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+        </ol>
+        <!-- 左右箭头 -->
+        <a href="javascript:;" id="leftarrow">&lt;</a>
+        <a href="javascript:;" id="rightarrow">&gt;</a>
+    </div>
     <!-- 底部 -->
     <div class="footer" style="margin-top: 65px;">
         <div class="footerTopBox">

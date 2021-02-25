@@ -339,6 +339,7 @@
 /* 轮播图部分 */
 
 .navWrap {
+    position: relative;
     width: 100%;
     height: 40px;
     background: #990000;
@@ -352,16 +353,70 @@
 
 .navWrap ul li:nth-of-type(1) {
     background: #ce171f;
+    width: 150px;
+    text-align: center;
+    font-weight: 600;
 }
 
 .navWrap ul li:nth-of-type(2) {
     background: #b40c10;
+    margin-left: 30px;
 }
 
 .navWrap ul li a {
     color: #fff;
+    font-size: 14px;
 }
 
 .navWrap ul .hover:hover {
     background: #b40c10;
+}
+
+.navWrap .navlist {
+    position: absolute;
+    left: 32px;
+    top: 40px;
+    z-index: 2880;
+    width: 170px;
+    height: 470px;
+    background: rgba(255, 255, 255, .8);
+    padding: 0 10px;
+}
+
+.navlist h3 {
+    font-size: 16px;
+    margin-left: 30px;
+    margin-bottom: 8px;
+    color: #333333;
+}
+
+.navlist dl {
+    width: 180px;
+    position: relative;
+}
+
+.navlist dl dt {
+    font-size: 12px;
+    display: inline-block;
+    margin: 0 2px;
+    font-size: #666;
+    cursor: pointer;
+}
+
+.navlist .leftnav {
+    position: absolute;
+    right: -500px;
+    top: -29px;
+    width: 500px;
+    height: 470px;
+    display: none;
+    background: #fff;
+}
+
+.navlist dt:hover {
+    color: orangered;
+}
+
+.navlist:hover .leftnav {
+    display: block;
 }
