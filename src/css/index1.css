@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .lunbo {
   width: 100%;
   height: 470px;
@@ -59,6 +60,98 @@
 }
 .lunbo #rightarrow {
   right: 220px;
+}
+
+.lay {
+  width: 100%;
+  position: relative;
+  z-index: 188;
+}
+.lay .indexTabBox {
+  width: 920px;
+  height: 499px;
+  float: left;
+}
+.lay .indexTabBox .indexTabNav {
+  width: 920px;
+  overflow: hidden;
+  height: 38px;
+  position: relative;
+}
+.lay .indexTabBox .indexTabNav li {
+  width: 183px;
+  height: 35px;
+  position: absolute;
+  top: 0px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 35px;
+  font-size: 16px;
+  color: #666666;
+  font-family: 微软雅黑;
+  border-left: 1px solid #ececec;
+  border-right: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+  border-top: 2px solid #ececec;
+  background: #f9f9f9;
+}
+.lay .indexTabBox .indexTabNav .n1 {
+  left: 0;
+}
+.lay .indexTabBox .indexTabNav .n2 {
+  left: 184px;
+}
+.lay .indexTabBox .indexTabNav .n3 {
+  left: 368px;
+}
+.lay .indexTabBox .indexTabNav .n4 {
+  left: 552px;
+}
+.lay .indexTabBox .indexTabNav .n5 {
+  width: 182px;
+  left: 736px;
+}
+.lay .indexTabBox .indexTabNav .active {
+  border-top: 2px solid #cc0000;
+  color: #cd0100;
+}
+.lay .indexTabBox .indexTabConWrap {
+  border: 1px solid #ececec;
+  border-top: none;
+  height: 460px;
+  overflow: hidden;
+}
+.lay .indexTabBox .indexTabConWrap .indexTabCon {
+  width: 910px;
+  height: 442px;
+  margin: 0 auto;
+  padding: 10px 0;
+  overflow: hidden;
+  position: relative;
+}
+.lay .indexTabBox .indexTabConWrap .indexTabCon .item {
+  display: none;
+}
+.lay .indexTabBox .indexTabConWrap .indexTabCon .item li {
+  width: 182px;
+  margin-top: 10px;
+  float: left;
+}
+.lay .indexTabBox .indexTabConWrap .indexTabCon .item li p {
+  font-size: 12px;
+  margin-top: 6px;
+  cursor: pointer;
+}
+.lay .indexTabBox .indexTabConWrap .indexTabCon .item li span {
+  font-size: 12px;
+  color: #cd0100;
+}
+.lay .indexTabBox .indexTabConWrap .indexTabCon .item li p:hover {
+  text-decoration: underline;
+  color: #cd0100;
+}
+.lay .indexTabBox .indexTabConWrap .indexTabCon .show {
+  display: block;
 }
 
 /*# sourceMappingURL=index1.css.map */

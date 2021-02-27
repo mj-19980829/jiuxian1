@@ -85,3 +85,21 @@ $lunbo.hover(function() {
         $rightarrow.click();
     }, 3000)
 })
+
+
+// 疯狂抢购Tap切换
+const $Tap = $('.indexTabNav .tapul li');
+const $Item = $('.indexTabCon .item');
+
+let $timer1 = null;
+$Tap.on('mouseover', function() {
+    $timer1 = setTimeout(() => {
+        $(this).addClass('active').siblings($Tap).removeClass('active');
+        $Item.eq($(this).index()).addClass('show').siblings($Item).removeClass('show');
+    }, 100);
+});
+
+
+$Tap.on('mouseout', function() {
+    clearTimeout($timer1);
+});
